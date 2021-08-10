@@ -5,29 +5,29 @@
 class QueryAwsLogs < Formula
   desc "A tool helping you to explore logs in AWS CloudWatch Logs"
   homepage "https://github.com/bananaumai/query-aws-logs"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.3/query-aws-logs_0.0.3_Darwin_x86_64.tar.gz"
-      sha256 "1ed97812ef9731f9ea3bbe89a2f75cac5689bd22faba13eea13649058facdf5b"
+      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.4/query-aws-logs_0.0.4_Darwin_x86_64.tar.gz"
+      sha256 "5341efa2af2b33e640e56c6fb4cea6f615079cb33ccb608f4e9e76dcc1b6fd66"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.3/query-aws-logs_0.0.3_Darwin_arm64.tar.gz"
-      sha256 "44f6be4a52b88d7ef1c9ea32af61545e41dd2c9547c98d23fde67c8e10f1aa1f"
+      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.4/query-aws-logs_0.0.4_Darwin_arm64.tar.gz"
+      sha256 "b5720f868bfba32c6354e1f48fc881891725635bcff2291a579a848dd2a73acf"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.3/query-aws-logs_0.0.3_Linux_x86_64.tar.gz"
-      sha256 "269fdae8db3ab77ef5c0a196dcdf88d09aed62fc07e00e01b1a548c8e98e648a"
+      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.4/query-aws-logs_0.0.4_Linux_x86_64.tar.gz"
+      sha256 "4e200e730b1d9371454ea9942ee4de61a55da22a048f84a0067f09fa8188a65d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.3/query-aws-logs_0.0.3_Linux_arm64.tar.gz"
-      sha256 "5377f443312236c5e3c385d3f89a6d091beba4585706357f59a42663ffb3a546"
+      url "https://github.com/bananaumai/query-aws-logs/releases/download/v0.0.4/query-aws-logs_0.0.4_Linux_arm64.tar.gz"
+      sha256 "6b06a5696fd7a21275bc72bc533f97aadf020d4029e72b95d3b624c571c1614d"
     end
   end
 
